@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>Comment Module</title>
+    <link rel="stylesheet" href="css/bootstrap.css"></link>
+    <link rel="stylesheet" href="css/styles.css"></link>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2 class="page-header">
+            <span>Comments</span>
+            <button class="btn btn-primary pull-right refresh-comments" type="button">Refresh Comments</button>
+          </h2>
+          <section class="comment-list">
+            <div class="row comments-mod">
+              <div class="col-md-12">
+                <form id="comment-form" class="form-inline">
+                  <div class="name-field">
+                    <span>Name : </span>
+                    <input id="comment-name" type="text" name="name" placeholder="Your Name" required>
+                  </div>
+                  <textarea id="comment-text" name="comment" placeholder="Write your comment here!" class="pb-cmnt-textarea" required></textarea>
+                  <button class="btn btn-primary pull-right submit-comment" type="button">Share</button>
+                </form>
+              </div>
+            </div>
+            <!-- Comment Container -->
+            <div id="show-comments" class="comments">
+              <h4>no comments</h4>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <script src="js/comment.js" charset="utf-8"></script>
+    <script src="js/commentsUI.js" charset="utf-8"></script>
+  </body>
+</html>
